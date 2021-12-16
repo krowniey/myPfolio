@@ -68,7 +68,8 @@ export default function Works() {
             </div>
            
             <img src="image/downarrow.png"  className="arrow left"  alt="" onClick={()=>handleClick("left")}/>
-            <img src="image/downarrow.png" alt="" className="arrow right"  alt=""  onClick={()=>handleClick("")}/>
+
+            <img src="image/downarrow.png"  className="arrow right"  alt=""  onClick={()=>handleClick()}/>
         </div>
     );
 }
