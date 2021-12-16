@@ -17,7 +17,7 @@ export default function menu({menuOpen, isMenuOpen}) {
                      
                 </li>
                 <li>
-                    <a href="#testimonials" onClick={()=>isMenuOpen(false)}>Testimonials</a>
+                    <a href="#testimonials" onClick={()=>isMenuOpen(false)}>Expertise</a>
                      
                 </li>
                 <li>
