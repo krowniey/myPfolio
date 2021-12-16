@@ -1,0 +1,159 @@
+@import "../../global.scss";
+.works{
+    background-color: rgb(203, 211, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    .arrow{
+
+        height: 40px;
+        position:absolute;
+        font-size: small;
+        cursor: pointer;
+        @include mobile{
+            display: none;   
+           }
+        &.left{
+            left: 100px;
+            transform: rotate(90deg);
+            cursor: pointer;
+
+        }
+        &.right{
+            right: 100px;
+            transform: rotate(-90deg);
+            cursor: pointer;
+            
+        }
+    }
+    .slider{
+     height: 350px;
+     display: flex;
+    margin-left: 100px;
+     position:absolute;
+     left: 0;
+     transition: all 1s ease-out ;
+     @include mobile{
+        height:100vh ; 
+         flex-direction:column ;
+         justify-content: center;
+         margin-left: 0px;
+       }
+    
+    .container{
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+
+.item{
+    width: 700px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+ @include mobile{
+        width: 95%;
+        height: 180px;
+        margin:5px 0;
+       }
+
+.left{
+    flex: 5;
+    height: 80%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   @include mobile{
+    
+    flex: 6;
+   }
+
+    
+   .leftcontainer{
+       width: 90%;
+       height: 70%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       @include mobile{
+        width: 95%;
+        height: 100%;
+       
+         
+       }
+
+      
+       .imagecontainer{
+           width: 30px;
+           height: 30px;
+           border-radius: 50%;
+           background-color: rgb(203, 211, 240);
+          display: flex;
+         align-items: center;
+         justify-content: center;
+
+ 
+ img{
+     width: 20px;
+
+       }}
+ h2{
+     font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+     @include mobile{
+        font-size: 15px;
+       }
+
+
+ }
+ p{
+    font-size:15px; 
+  font-weight: 400;
+    @include mobile{
+        font-size: 9px;
+       }
+
+   
+ }
+a{
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+cursor: pointer;
+color: rgb(66, 61, 61);
+
+
+       }
+
+
+   }
+
+}
+.right{
+    flex: 7;
+    overflow: hidden;
+    height: 100%;
+    @include mobile{
+         flex:6 ;
+       }
+
+    img{
+        width: 400px;
+        transform:rotate(-10deg);
+        @include mobile{
+             width: 300px;
+           }
+    
+    }
+}
+}
+}
+}
+    }
