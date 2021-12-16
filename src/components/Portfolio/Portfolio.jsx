@@ -63,7 +63,7 @@ const [selected, setSelected] = useState([ ]);
 
                
                 <div className="item">
-                    <img src= {d.img}/>
+                    <img src= {d.img} alt="altanative"/>
                     <h3>{d.title}</h3>
                 
                 </div>

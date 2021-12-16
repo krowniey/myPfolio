@@ -54,7 +54,7 @@ export default function Works() {
                                 <h2>{d.title}</h2>
                                 
                                 <p>  {d.desc} </p>
-                            <a href={d.link} target="_blank">Project</a>
+                            <a href={d.link} target="_blank" rel="noreferrer">Project</a>
                         
                             </div>
 
@@ -68,7 +68,7 @@ export default function Works() {
             </div>
            
             <img src="image/downarrow.png"  className="arrow left"  alt="" onClick={()=>handleClick("left")}/>
-            <img src="image/downarrow.png" alt="" className="arrow right"  alt=""  onClick={()=>handleClick()}/>
+            <img src="image/downarrow.png" alt="" className="arrow right"  alt=""  onClick={()=>handleClick("")}/>
         </div>
     );
 }
